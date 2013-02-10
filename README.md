@@ -10,6 +10,8 @@ Description:
 Requirements:
 	- MySQL Server
 	- Apache-Tomcat(7.0.14)
+	- Java Development Kit(jdk1.6 or up)
+	- notepad++ or wordpad (to view the files that you will configure properly)
 	
 Installation:
 	- Extract myCardDeckBundle.zip on any directory of your choice
@@ -31,8 +33,11 @@ Running the Application:
 	- Check first the app-config.properties(located at <homefolder>/.mycarddeck/) if it matches your MySql's username and password 
 	  	- Modify it if doesn't match on your MySQL credentials
  	- Check if the myCardDeck.war is located on the webapps folder of tomcat (<path>/apache-tomcat-7.0.14/webapps)
- 	- Go to the bin folder(<path>/apache-tomcat-7.0.14/bin) and click startup.sh(Linux or Ubuntu - just click run on the pop up) or startup.sh(Windows) 
- 	  (Note: you can also go to your terminal or command prompt and execute the sh or bat file)
+ 	- Go to the bin folder(<path>/apache-tomcat-7.0.14/bin) and click startup.sh(Linux or Ubuntu - just click run on the pop up) or startup.bat(Windows) 
+ 	  (Note: - You can also go to your terminal or command prompt and execute the sh or bat file
+			 - If you are using Windows, please modify the startup.bat file on your wordpad and write this on top of the bat script to set your java home path:
+				set JAVA_HOME=<Installation path>\Java\<jdk folder>)
+
  	- Open your browser(preferably Firefox) and type http://localhost:8080/myCardDeck/
 
 Features:
